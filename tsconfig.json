@@ -16,6 +16,7 @@
     "pages/**/*.ts",
     "playwright.config.ts",
     "step-definitions/**/*.ts",
+    "tests/**/*.ts",
     "test-runner/**/*.ts",
     "utils/**/*.ts"
   ]

@@ -7,3 +7,4 @@ screenshots/*
 !screenshots/.gitkeep
 test-results/
 allure-results/
+allure-report/

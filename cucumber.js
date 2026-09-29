@@ -3,8 +3,8 @@ module.exports = {
   default: {
     paths: ['features/**/*.feature'],
     requireModule: ['tsx/cjs'],
-    require: ['hooks/**/*.ts', 'step-definitions/**/*.ts'],
-    format: ['progress'],
+    require: ['hooks/**/*.ts', 'step-definitions/**/*.ts', 'support/**/*.ts'],
+    format: ['progress', 'allure-cucumberjs/reporter'],
     formatOptions: { snippetInterface: 'async-await' },
   },
 };
