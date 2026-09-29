@@ -1,0 +1,9 @@
+node_modules/
+dist/
+config/*
+reports/*
+!reports/.gitkeep
+screenshots/*
+!screenshots/.gitkeep
+test-results/
+allure-results/
