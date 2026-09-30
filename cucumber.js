@@ -1,10 +1,19 @@
-// Cucumber CLI configuration also supports direct commands such as --tags "@smoke".
 module.exports = {
   default: {
     paths: ['features/**/*.feature'],
-    requireModule: ['tsx/cjs'],
-    require: ['hooks/**/*.ts', 'step-definitions/**/*.ts', 'support/**/*.ts'],
+    requireModule: ['ts-node/register'],
+    require: [
+      'hooks/**/*.ts',
+      'step-definitions/**/*.ts',
+      'support/**/*.ts',
+      'steps/**/*.ts',
+      'support/env.ts'
+    ],
     format: ['progress', 'allure-cucumberjs/reporter'],
-    formatOptions: { snippetInterface: 'async-await' },
+    formatOptions: {
+      snippetInterface: 'async-await',
+      allure: { resultsDir: 'allure-results' }
+    },
+    tags: '@smoke'
   },
 };
